@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.content {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.content img{
+  width: 100%;
+}
+
+/**
+ * Grid
+ */
+.grid:after {
+	content: ".";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+  position: relative;
+}
+
+.col {
+  width: 50%;
+  padding: 10px;
+}
+
+.col-sm {
+  width: 30%;
+}
+
+.col-lg {
+  width: 70%;
+}
+
+.col-left {
+  float: left;
+}
+
+.col-right {
+  float: right;
+}
+
+/**
+ * Gallery
+ */
+.gallery:after {
+	content: ".";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+  position: relative;
+}
+
+.gallery img {
+  width: auto;
+  float: left;
+  margin: 10px;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "zoom-image",
+  "version": "1.0",
+  "description": "Zoom-Image is a Javascript plugin to add a Medium zoom like on your images",
+  "main": "zoom-image.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clement Osternaud <osternaud.clement@gmail.com> (http://clementosternaud.com/)",
+  "license": "ISC"
+}
