@@ -1,6 +1,6 @@
 {
   "name": "zoom-image",
-  "version": "1.0",
+  "version": "0.0.2",
   "description": "Zoom-Image is a Javascript plugin to add a Medium zoom like on your images",
   "main": "zoom-image.js",
   "scripts": {

@@ -1,22 +1,17 @@
 /**
- * ToDo
- * - Close by clicking on overlay
- * - Close by ESC key
- * - Remove console log
- * - Add minify version
- * - Add require version
+ * Zoom-Image
+ * by @osternaud_clem
+ * inspired by Zoom.js (https://github.com/fat/zoom.js/)
+ * V0.0.1 - Feb 21, 2015
  */
 
-
 function ZoomImage(imgs) {
-  console.log('Class Zoom function');
   this._imgs = imgs;
   this._activeZoom = null;
   this.init();
 }
 
 ZoomImage.prototype.init = function() {
-  console.log('Zoom Init');
   for (var i = 0; i < this._imgs.length; i++) {
     var img = this._imgs[i];
     zoom = new Zoom(img);
@@ -44,7 +39,7 @@ Zoom.prototype.zoomImage = function() {
   var img = document.createElement('img');
 
   img.onload = function() {
-    console.log('Load img');
+
     that._fullHeight = img.naturalHeight;
     that._fullWidth = img.naturalWidth;
 
@@ -52,6 +47,10 @@ Zoom.prototype.zoomImage = function() {
     that._targetImage.addEventListener('click', that, false);
     that._$window.addEventListener('scroll', function(e) {
       that._scrollClose();
+    }, false);
+
+    that._$document.addEventListener('keyup', function(e) {
+      that._keyHandler(e);
     }, false);
   };
 
@@ -61,7 +60,6 @@ Zoom.prototype.zoomImage = function() {
 Zoom.OFFSET = 80;
 
 Zoom.prototype.handleEvent = function(e) {
-  console.log('Click Handler');
   if (this._isZoom) {
     this._close();
   } else {
@@ -88,7 +86,6 @@ Zoom.prototype._zoomOriginal = function() {
 };
 
 Zoom.prototype._calculateZoom = function() {
-  console.log('Calculate Zoom');
   this._targetImage.offsetWidth;
 
   var originalFullImageWidth  = this._fullWidth;
@@ -113,11 +110,9 @@ Zoom.prototype._calculateZoom = function() {
     this._imgScaleFactor = (viewportWidth / originalFullImageWidth) * maxScaleFactor;
   }
 
-  console.log(this._imgScaleFactor);
 };
 
 Zoom.prototype._triggerAnimation = function() {
-  console.log('Trigger Animation');
   this._targetImage.offsetWidth; // repaint before animating
 
   var imageOffset = {
@@ -165,8 +160,15 @@ Zoom.prototype._scrollClose = function() {
   }
 };
 
+Zoom.prototype._keyHandler = function(e) {
+  if (e.keyCode == 27) {
+    if (this._isZoom) {
+      this._close();
+    }
+  }
+}
+
 Zoom.prototype._close = function() {
-  console.log('Close');
   var that = this;
   this._targetImageWrap.style.transform = '';
   this._targetImage.style.transform = '';
