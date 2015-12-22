@@ -42,7 +42,7 @@ You can download this repo and add manually the files into your library folder.
 
 ## TO-DO
 * Close by clicking on overlay
-* Close by ESC key
-* Remove console log
-* Add minify version
+* Close by ESC key √
+* Remove console log √
+* Add minify version √
 * Add require version

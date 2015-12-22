@@ -1,7 +1,11 @@
 {
   "name": "zoom-image",
   "main": "zoom-image.js",
+<<<<<<< HEAD
   "version": "1.0",
+=======
+  "version": "0.0.2",
+>>>>>>> gh-pages
   "authors": [
     "Clement Osternaud  <osternaud.clement@gmail.com>"
   ],

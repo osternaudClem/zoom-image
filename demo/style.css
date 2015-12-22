@@ -5,11 +5,81 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
+  color: #333;
 }
 
-.content {
-  width: 700px;
-  margin: 40px auto;
+a {
+  color: #4B649E;
+  text-decoration: none;
+}
+
+h2:not([id='']) {
+  position: relative;
+}
+
+h2:not([id=''])::before {
+  content: "#";
+  position: absolute;
+  left: -18px;
+  color: #ddd;
+}
+
+h2:not([id='']):hover::before {
+  color: #888;
+}
+
+h2 a {
+  color: inherit;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  color: #aaa;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/**
+ * Header
+ */
+.header {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: solid 1px rgba(198, 198, 199, 0.2);
+}
+
+.header::after {
+  content: ".";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  position: relative;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .content img{
@@ -17,54 +87,101 @@ body {
 }
 
 /**
- * Grid
+ * Buttons
  */
-.grid:after {
-	content: ".";
-	height: 0;
-	line-height: 0;
-	display: block;
-	visibility: hidden;
-	clear: both;
-  position: relative;
+ .btn {
+  height: 50px;
+  border-radius: 2px;
+  display: block;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: .8em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.col {
-  width: 50%;
-  padding: 10px;
+.btn-primary {
+  background: #55acee;
+  color: #fff;
 }
 
-.col-sm {
-  width: 30%;
+.btn-primary:hover {
+  background: #83c3f3;
+  color: #fff
 }
 
-.col-lg {
-  width: 70%;
-}
+@media screen and (min-width: 700px) {
+  .header h1 {
+    float: left;
+  }
 
-.col-left {
-  float: left;
-}
+  .nav {
+    display: block;
+    float: right;
+  }
 
-.col-right {
-  float: right;
-}
+  /**
+   * Grid
+   */
+  .grid {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 
-/**
- * Gallery
- */
-.gallery:after {
-	content: ".";
-	height: 0;
-	line-height: 0;
-	display: block;
-	visibility: hidden;
-	clear: both;
-  position: relative;
-}
+  .grid::after {
+  	content: ".";
+  	height: 0;
+  	line-height: 0;
+  	display: block;
+  	visibility: hidden;
+  	clear: both;
+    position: relative;
+  }
 
-.gallery img {
-  width: auto;
-  float: left;
-  margin: 10px;
+  .col {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .col-sm {
+    width: 30%;
+  }
+
+  .col-lg {
+    width: 70%;
+  }
+
+  .col-left {
+    float: left;
+  }
+
+  .col-right {
+    float: right;
+  }
+
+  /**
+   * Gallery
+   */
+  .gallery {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .gallery::after {
+  	content: ".";
+  	height: 0;
+  	line-height: 0;
+  	display: block;
+  	visibility: hidden;
+  	clear: both;
+    position: relative;
+  }
+
+  .gallery img {
+    width: auto;
+    float: left;
+    margin: 10px;
+  }
 }
