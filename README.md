@@ -40,6 +40,15 @@ You have two files to import into your html:
 ### Manually
 You can download this repo and add manually the files into your library folder.
 
+## Use it
+Now, in your script file:
+
+```javascript
+var imgs = document.getElementsByTagName('img');
+
+var zoom = new ZoomImage(imgs);
+```
+
 ## TO-DO
 * Close by clicking on overlay
 * Close by ESC key √

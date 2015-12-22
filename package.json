@@ -6,6 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "zoom",
+    "javascript",
+    "image",
+    "medium"
+  ],
+  "homepage": "https://github.com/osternaudClem/zoom-image",
+  "bugs": {
+    "url": "https://github.com/osternaudClem/zoom-image/issues"
+  },
   "author": "Clement Osternaud <osternaud.clement@gmail.com> (http://clementosternaud.com/)",
   "license": "ISC"
 }

@@ -1,18 +1,20 @@
 {
   "name": "zoom-image",
   "main": "zoom-image.js",
-<<<<<<< HEAD
-  "version": "1.0",
-=======
   "version": "0.0.2",
->>>>>>> gh-pages
   "authors": [
     "Clement Osternaud  <osternaud.clement@gmail.com>"
+  ],
+  "keywords": [
+    "zoom",
+    "javascript",
+    "image",
+    "medium"
   ],
   "description": "Zoom-Image is a Javascript plugin to add a Medium zoom like on your images.",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/osternaudClem/zoom-image",
   "ignore": [
     "**/.*",
     "node_modules",

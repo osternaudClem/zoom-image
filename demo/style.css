@@ -180,7 +180,7 @@ figcaption {
   }
 
   .gallery img {
-    width: auto;
+    width: 45%;
     float: left;
     margin: 10px;
   }
