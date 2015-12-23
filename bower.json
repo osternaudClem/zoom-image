@@ -15,12 +15,5 @@
   "description": "Zoom-Image is a Javascript plugin to add a Medium zoom like on your images.",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "https://github.com/osternaudClem/zoom-image",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "homepage": "https://github.com/osternaudClem/zoom-image"
 }
