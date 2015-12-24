@@ -2,7 +2,7 @@
  * Zoom-Image
  * by @osternaud_clem
  * inspired by Zoom.js (https://github.com/fat/zoom.js/)
- * V0.0.1 - Feb 21, 2015
+ * V0.0.3 - December 2015
  */
 
 function ZoomImage(imgs) {

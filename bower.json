@@ -1,7 +1,7 @@
 {
   "name": "zoom-image",
   "main": "zoom-image.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "authors": [
     "Clement Osternaud  <osternaud.clement@gmail.com>"
   ],
