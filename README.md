@@ -1,6 +1,6 @@
 # Zoom-Image
 **Zoom-Image** is a Javascript plugin to add a Medium zoom like on your images.
-You can see a demo at this [page](http://demo.co.fr)
+You can see a demo at this [page](https://osternaudclem.github.io/zoom-image)
 
 ## Download it
 You have different way to get the library.
@@ -30,11 +30,11 @@ $ npm install --save zoom-image
 You have two files to import into your html:
 
 ```html
-<link rel="stylesheet" href="node_modules/zoom-image/zoom-image.css">
+<link rel="stylesheet" href="node_modules/zoom-image/dist/zoom-image.css">
 ```
 
 ```html
-<script type="text/javascript" href="node_modules/zoom-image/zoom-image.js"></script>
+<script type="text/javascript" href="node_modules/zoom-image/dist/zoom-image.js"></script>
 ```
 
 ### Manually
