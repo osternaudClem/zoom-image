@@ -54,4 +54,3 @@ var zoom = new ZoomImage(imgs);
 * Close by ESC key √
 * Remove console log √
 * Add minify version √
-* Add require version
